@@ -100,8 +100,7 @@ void loop() {
             Serial.println(t.readLatLon());
         }
     }
-    // I don't know why I need to call this but if I don't the functions
-    // and variables don't show up in the console.
+    // Must call this explicitly when using MANUAL mode
     Particle.process();
 }
 
